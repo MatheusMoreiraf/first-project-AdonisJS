@@ -33,7 +33,15 @@ This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
 
 - Steps to configure pgAdmin4:
 
-![](./img-pg-conf/pg0.png =50x)
+![](./img-pg-conf/pg0.png)
+
+![](./img-pg-conf/pg1.png)
+
+![](./img-pg-conf/pg2.png)
+
+![](./img-pg-conf/pg3.png)
+
+![](./img-pg-conf/pg4.png)
 
 ## Start
 
