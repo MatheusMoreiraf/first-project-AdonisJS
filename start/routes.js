@@ -17,6 +17,6 @@
 const Route = use('Route')
 
 Route.on('/').render('home')
-Route.on('/tasks').render('tasks')
+Route.get('/tasks', 'TaskController.index')
 Route.on('/add').render('add')
 
