@@ -42,12 +42,19 @@ class TaskController {
     return response.redirect('/tasks')
   }
 
-  async detail({ params, view }) {
+  async detail({params, view}) {
     const task = await Task.find(params.id)
 
-    return view.render('detail',{
+    return view.render('detail', {
       task: task
     })
+  }
+
+  async remove({params, response, session}) {
+    const task = await Task.find(params.id)
+    await task.delete()
+    session.flash({notification: 'Task removed!'})
+    return response.redirect('/tasks')
   }
 }
 

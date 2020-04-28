@@ -22,3 +22,4 @@ Route.on('/add').render('add')
 Route.post('/add', 'TaskController.store')
 
 Route.get('/task/:id', 'TaskController.detail')
+Route.get('/remove/:id', 'TaskController.remove')
